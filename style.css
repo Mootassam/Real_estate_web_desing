@@ -383,8 +383,16 @@ p.cost {
   align-items: center;
   border: 1px solid #f3f3fa;
   border-radius: 4px;
-  filter: drop-shadow(0px 4px 20px rgba(71, 100, 195, 0.1));
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 3rem 4.6875rem;
+}
+.team > div:nth-child(3) {
+  padding: 0;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border: 0;
 }
 
 .team > div > div {
