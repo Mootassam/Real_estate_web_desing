@@ -170,11 +170,12 @@ li {
 }
 
 select {
-  border: 1px solid var(--blue);
+  outline: 1px solid var(--blue);
+  outline-offset: -1px;
   color: var(--blue);
   font-size: 17px;
   line-height: 27px;
-  padding: 1rem;
+  padding: 11px 20px 11px 16px;
   border-radius: 4px;
   background-color: var(--white);
 }
