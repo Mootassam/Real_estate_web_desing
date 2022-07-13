@@ -180,6 +180,9 @@ select {
 }
 
 /* ***** styling the header content ***** */
+.app__header {
+  height: 100vh;
+}
 .header__content {
   width: 100%;
   padding: 80px 0 102px;
@@ -208,7 +211,7 @@ select {
   position: absolute;
   z-index: 3;
   background-color: var(--light--blue);
-  bottom: 25px;
+  bottom: 69px;
   left: 0;
   padding: 1.5rem;
   display: flex;
@@ -243,13 +246,13 @@ select {
   margin-right: 0.5rem;
 }
 .content__right {
+  padding-top: 3rem;
   width: 50%;
   position: relative;
 }
 .image__header {
   z-index: 1;
 }
-
 .image__background {
   position: absolute;
   right: 0;
