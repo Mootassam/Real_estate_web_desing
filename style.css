@@ -42,7 +42,7 @@ h6 {
 
 p {
   font-size: 1.0625rem;
-  line-height: 1.59375rem;
+  line-height: 1.4375rem;
   color: var(--dark--blue);
 }
 
@@ -63,10 +63,9 @@ a:hover {
 .button__secondary,
 .button__large {
   font-size: 1rem;
-  font-weight: 1.25rem;
+  line-height: 1.25rem;
   padding: 14px 16px;
-  width: max-content;
-  border-radius: 4px;
+
   font-weight: 700;
   font-family: "Merriweather", serif;
   cursor: pointer;
@@ -133,7 +132,8 @@ input:active {
 
 /* ***** Styling the header ****  */
 
-.app__header {
+.app {
+  overflow-x: hidden;
 }
 
 .header {
@@ -146,15 +146,14 @@ input:active {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
   align-content: center;
 }
 .nav {
   display: flex;
-  width: 100%;
   align-items: center;
+  justify-content: center;
 }
 .nav > img {
   margin-right: 71.29px;
@@ -177,7 +176,9 @@ select {
   line-height: 27px;
   padding: 1rem;
   border-radius: 4px;
+  background-color: var(--white);
 }
+
 /* ***** styling the header content ***** */
 .header__content {
   width: 100%;
@@ -234,11 +235,25 @@ select {
 .content__bottom select {
   max-width: 205px;
 }
+.button__large > img {
+  width: 14px;
+  height: 14px;
+}
 .image__search {
   margin-right: 0.5rem;
 }
 .content__right {
   width: 50%;
+  position: relative;
+}
+.image__header {
+  z-index: 1;
+}
+
+.image__background {
+  position: absolute;
+  right: 0;
+  z-index: 0;
 }
 .image__dots {
   position: absolute;
