@@ -49,8 +49,12 @@ p {
 a {
   font-size: 1.0625rem;
   font-weight: 0.9375rem;
+  text-decoration: none;
+  color: var(--dark--blue);
 }
-
+a:hover {
+  color: var(--hover);
+}
 .subHeader {
   font-size: 1.328125rem;
   line-height: 1.75rem;
@@ -165,9 +169,7 @@ li {
   cursor: pointer;
   margin-right: 25px;
 }
-li:hover {
-  color: var(--hover);
-}
+
 select {
   border: 1px solid var(--blue);
   color: var(--blue);
