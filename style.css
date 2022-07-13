@@ -56,8 +56,11 @@ a:hover {
   color: var(--hover);
 }
 .subHeader {
+  font-family: "Open Sans";
+  font-weight: 400;
   font-size: 1.328125rem;
   line-height: 1.75rem;
+  color: var(--dark--blue);
 }
 
 .button__secondary,
@@ -67,7 +70,7 @@ a:hover {
   padding: 14px 16px;
 
   font-weight: 700;
-  font-family: "Merriweather", serif;
+  font-family: "Open Sans";
   cursor: pointer;
 }
 
@@ -280,6 +283,7 @@ select {
   margin-right: auto;
 }
 .offres__detaill {
+  padding-top: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -288,6 +292,7 @@ select {
   max-width: 611px;
 }
 .offres__nav {
+  padding-top: 1.0625rem;
   display: flex;
   align-content: center;
   align-items: center;
