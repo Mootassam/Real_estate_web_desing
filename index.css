@@ -1,0 +1,23 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* **** primary__color *****  */
+  --dark--blue: #091739;
+  --light--blue: #f5f5fa;
+  --hover: #6d8ae9;
+  --blue: #1c3887;
+  --gray: #dedede;
+  --white: #ffffff;
+  --black: #111111;
+
+  /****** Secondary Color ****** */
+  --background-offres: #f4f4fa;
+  --background-precedent: #dadaee;
+  --background-references: #f3f3fa;
+}

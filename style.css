@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;700&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+  color: var(--dark--blue);
+}
+
+h1 {
+  font-size: 4.053125rem;
+  line-height: 5.39375rem;
+}
+h2 {
+  font-size: 3.2425rem;
+  line-height: 4.3125rem;
+}
+h3 {
+  font-size: 2.59375rem;
+  line-height: 3.45rem;
+}
+h4 {
+  font-size: 2.0751875rem;
+  line-height: 2.6rem;
+}
+
+h5 {
+  font-size: 1.328rem;
+  line-height: 1.75rem;
+}
+h6 {
+  font-size: 1.34375rem;
+  line-height: 1.76875rem;
+}
+
+p {
+  font-size: 1.0625rem;
+  line-height: 1.59375rem;
+  color: var(--dark--blue);
+}
+
+a {
+  font-size: 1.0625rem;
+  font-weight: 0.9375rem;
+}
+
+.subHeader {
+  font-size: 1.328125rem;
+  line-height: 1.75rem;
+}
+
+.button__secondary,
+.button__large {
+  font-size: 1rem;
+  font-weight: 1.25rem;
+  padding: 14px 16px;
+  width: max-content;
+  border-radius: 4px;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  cursor: pointer;
+}
+
+.button__large,
+.button__small {
+  background-color: var(--blue);
+  color: var(--white);
+  width: max-content;
+  border-radius: 4px;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  cursor: pointer;
+}
+.button__large:hover {
+  background-color: var(--hover);
+}
+.button__small:hover {
+  background-color: var(--hover);
+}
+.button__secondary,
+.button__small__secondary {
+  background-color: transparent;
+  outline: 2px solid var(--blue);
+  outline-offset: -2px;
+  color: var(--blue);
+  width: max-content;
+  border-radius: 4px;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  cursor: pointer;
+}
+.button__secondary:hover {
+  outline: 2px solid var(--hover);
+  outline-offset: -2px;
+  color: var(--hover);
+}
+.button__small__secondary:hover {
+  outline: 2px solid var(--hover);
+  outline-offset: -2px;
+  color: var(--hover);
+}
+
+.button__small__secondary,
+.button__small {
+  font-size: 0.875rem;
+  font-weight: 1rem;
+  padding: 13px 16px 11px 16px;
+  width: max-content;
+}
+
+input {
+  border: 1px solid var(--gray);
+  color: var(--black);
+  padding: 17px 16px 11px 16px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+input:active {
+  border: 1px solid var(--blue);
+  outline: none;
+}
+
+/* ***** Styling the header ****  */
+
+.app__header {
+}
+
+.header {
+  padding-top: 40px;
+  width: 100%;
+}
+
+.header__top {
+  max-width: 1121px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.nav > img {
+  margin-right: 71.29px;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+  margin-right: 25px;
+}
+li:hover {
+  color: var(--hover);
+}
+select {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  font-size: 17px;
+  line-height: 27px;
+  padding: 1rem;
+  border-radius: 4px;
+}
+/* ***** styling the header content ***** */
+.header__content {
+  width: 100%;
+  padding: 80px 0 102px;
+}
+.content {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.content__left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding-top: 4rem;
+  width: 50%;
+  padding-right: 2.1875rem;
+}
+
+.content__bottom {
+  position: absolute;
+  z-index: 3;
+  background-color: var(--light--blue);
+  bottom: 25px;
+  left: 0;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 4px;
+  align-items: center;
+}
+.right__input {
+  padding: 0px 64px 0px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gray);
+  background-color: var(--white);
+  border-radius: 4px;
+}
+.content__bottom input {
+  max-width: 302px;
+  outline: none;
+  border: 0;
+}
+.content__bottom select {
+  max-width: 205px;
+}
+.image__search {
+  margin-right: 0.5rem;
+}
+.content__right {
+  width: 50%;
+}
+.image__dots {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -30px;
+}
+
+/* **** styling the offres Version desktop ****** */
+
+.app__offers {
+  background-color: var(--background-offres);
+  padding: 120px 0;
+  width: 100%;
+}
+.offres {
+  width: 100%;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.offres__detaill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offres__detaill > div:nth-child(1) {
+  max-width: 611px;
+}
+.offres__nav {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.nav__progress {
+  max-width: 943px;
+  background-color: var(--background-precedent);
+  width: 100%;
+  height: 2px;
+  margin-right: 1.375rem;
+}
+.nav__more,
+.nav__precedent {
+  padding: 18px 25px;
+  border-radius: 50%;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+}
+.nav__more {
+  background-color: var(--blue);
+}
+.nav__precedent {
+  background-color: var(--background-precedent);
+  margin-right: 1.625rem;
+}
+
+.offres__rooms {
+  padding-top: 2.125rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+}
+
+.offres__rooms > div {
+  max-height: max-content;
+  background-color: var(--white);
+  border-radius: 4px;
+  border: 1px solid #f3f3fa;
+}
+
+.rooms__detaills {
+  padding: 1.5rem 1.25rem 1.1875rem;
+}
+
+p.cost {
+  padding-top: 1.1875rem;
+  padding-bottom: 0.3125rem;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+/* ***** Styling the about section version desktop *****  */
+.app__about {
+  width: 100%;
+}
+/* Styling the about_us */
+
+.about__us {
+  flex-direction: row;
+}
+
+.about__content {
+  display: flex;
+  padding: 138px 0 120px;
+  max-width: 1120px;
+  margin: auto;
+}
+.about__right {
+  margin-left: 5.6875rem;
+}
+
+/* styling the about team */
+
+.about__team {
+  width: 100%;
+}
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1120px;
+  margin: auto;
+}
+.team > div {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  border: 1px solid #f3f3fa;
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 20px rgba(71, 100, 195, 0.1));
+  padding: 3rem 4.6875rem;
+}
+
+/* styling the about reference */
+
+.about__references {
+  width: 100%;
+}
+.references {
+  padding: 7.5rem 0;
+  max-width: 1120px;
+  margin: auto;
+}
+
+.references__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  padding-top: 2.6875rem;
+}
+.references__content > div {
+  padding: 1.5rem;
+  background-color: var(--background-references);
+}
+
+h6.text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 21.5px;
+  line-height: 28px;
+  max-width: 611px;
+}
+.references__navigations {
+  padding-top: 2.5rem;
+}
+.references__navigations > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.references__navigations > ul > li {
+  background-color: #dadaee;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.references__navigations > ul > li:nth-child(3) {
+  background-color: var(--blue);
+}
+
+/* ***** styling the news lettre ***** */
+.app__newslettre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-offres);
+  padding: 5.625rem 0;
+}
+.app__newslettre > img {
+  filter: opacity(0.5) drop-shadow(0 0 0 blue);
+}
+.newslettre__form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.newslettre__detaills {
+  margin-left: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.newslettre__form {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.app__newslettre > img {
+  max-width: 217px;
+}
+/* ***** syling the footer Version desktop **** */
+
+.app__footer {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  justify-content: center;
+  padding: 3.625rem 0 4.375rem 0;
+}
