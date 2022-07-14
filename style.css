@@ -599,7 +599,26 @@ h6.text {
   column-gap: 16px;
 }
 .form__filter {
-  padding: 0.8125rem 0;
+  padding: 1.9375rem 0;
+}
+.filter__bar {
+  width: 1120px;
+  height: 0.79px;
+  background-color: var(--background-precedent);
+  position: relative;
+  color: var();
+}
+.filter__text {
+  display: flex;
+  position: absolute;
+  background-color: var(--background-offres);
+  padding: 4.96px 2.4375rem;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  color: #141b2d;
+  z-index: 13;
+  opacity: 0.5;
 }
 .form__select {
   display: flex;
@@ -622,6 +641,7 @@ h6.text {
   height: 4px;
   background-color: var(--range);
   position: relative;
+  cursor: pointer;
 }
 .range__bar::before {
   content: "";
@@ -633,6 +653,7 @@ h6.text {
   height: 24px;
   border-radius: 50%;
   top: -10px;
+  cursor: pointer;
 }
 .range__bar::after {
   content: "";
@@ -644,6 +665,7 @@ h6.text {
   height: 24px;
   border-radius: 50%;
   top: -10px;
+  cursor: pointer;
 }
 .range__number {
   padding-top: 20px;
