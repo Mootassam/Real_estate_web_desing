@@ -42,7 +42,7 @@ h6 {
 
 p {
   font-size: 1.0625rem;
-  line-height: 1.4375rem;
+  line-height: 1.5;
   color: var(--dark--blue);
 }
 
@@ -351,7 +351,7 @@ p.cost {
 /* Styling the about_us */
 
 .about__us {
-  flex-direction: row;
+  width: 100%;
 }
 
 .about__content {
@@ -360,10 +360,36 @@ p.cost {
   max-width: 1120px;
   margin: auto;
 }
-.about__right {
-  margin-left: 5.6875rem;
+.about__left {
+  position: relative;
+  margin-right: 5.6875rem;
 }
-
+.aboutus__left {
+  padding-top: 2.875rem;
+  padding-left: 3.8125rem;
+  height: 464px;
+  max-width: 628px;
+}
+.about__dots {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.about__right {
+  max-width: 356px;
+}
+.right__detaills {
+  padding-top: 1.5rem;
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.3rem;
+}
+.right__detaills > p {
+  padding-right: 4px;
+}
 /* styling the about team */
 
 .about__team {
