@@ -424,6 +424,24 @@ p.cost {
   background-color: var(--background-references);
 }
 
+.references__detaills {
+  padding: 0 0 1.5rem;
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+}
+.references__detaills > img {
+  padding-top: 30px;
+}
+.references__detaills > p {
+  padding-top: 2.625rem;
+  max-width: 444px;
+}
+.author > div {
+  font-weight: 700;
+}
+
 h6.text {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
