@@ -56,11 +56,12 @@ a:hover {
   color: var(--hover);
 }
 .subHeader {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.328125rem;
-  line-height: 1.75rem;
+  line-height: 1.33;
   color: var(--dark--blue);
+  font-style: normal;
 }
 
 .button__secondary,
@@ -68,7 +69,6 @@ a:hover {
   font-size: 1rem;
   line-height: 1.25rem;
   padding: 14px 16px;
-
   font-weight: 700;
   font-family: "Open Sans";
   cursor: pointer;
@@ -398,6 +398,9 @@ p.cost {
 .team > div > div {
   font-weight: 700;
   padding-top: 1.625rem;
+}
+.team > div:nth-child(3) > div {
+  font-weight: 400;
 }
 /* styling the about reference */
 
