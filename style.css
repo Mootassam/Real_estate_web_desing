@@ -645,6 +645,12 @@ h6.text {
   border-radius: 50%;
   top: -10px;
 }
+.range__number {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 /* Stlying the page offeres */
 
