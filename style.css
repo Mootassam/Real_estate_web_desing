@@ -598,7 +598,9 @@ h6.text {
   align-items: center;
   column-gap: 16px;
 }
-
+.form__filter {
+  padding: 0.8125rem 0;
+}
 .form__select {
   display: flex;
   column-gap: 1.5rem;
@@ -606,7 +608,45 @@ h6.text {
 .form__select > select {
   max-width: 262px;
   width: 262px;
+  outline: 2px solid var(--dark--blue);
+  outline-offset: -2px;
+  color: var(--dark--blue);
 }
+
+.form__range {
+  padding: 1.5rem 0 0 0;
+}
+
+.range__bar {
+  width: 546px;
+  height: 4px;
+  background-color: var(--range);
+  position: relative;
+}
+.range__bar::before {
+  content: "";
+  background-color: var(--blue);
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: -10px;
+}
+.range__bar::after {
+  content: "";
+  background-color: var(--blue);
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: -10px;
+}
+
+/* Stlying the page offeres */
 
 .page__offres {
   max-width: 1120px;
