@@ -116,8 +116,8 @@ a:hover {
 .button__small__secondary,
 .button__small {
   font-size: 0.875rem;
-  font-weight: 1rem;
-  padding: 13px 16px 11px 16px;
+  line-height: 1rem;
+  padding: 13px 24px 13px 24px;
   width: max-content;
 }
 
@@ -554,7 +554,7 @@ h6.text {
 /* Styling the Page Offres  */
 .offres__content {
   width: 100%;
-  padding: 5.5rem 0 2.5rem;
+  padding: 5.5rem 0 2.9375rem;
 }
 .content__offres {
   display: flex;
@@ -684,9 +684,12 @@ h6.text {
 
 .page__offres {
   max-width: 1120px;
-  flex-direction: column;
   margin: auto;
-  padding-bottom: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .page__offres > div {
@@ -694,9 +697,11 @@ h6.text {
   grid-template-columns: repeat(3, 1fr);
   row-gap: 2.5rem;
 }
+.page__offres > div:nth-last-child(1) {
+  display: block;
+}
 .page__offres > div > div {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 20px 0px;
-  padding-bottom: 1.1875rem;
 }
 .offres__button {
   align-self: center;
@@ -704,4 +709,5 @@ h6.text {
   padding-top: 2.5rem;
   margin: auto;
   float: right;
+  padding-bottom: 7.5rem;
 }
