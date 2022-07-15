@@ -861,3 +861,38 @@ h6.text {
   display: flex;
   justify-content: space-between;
 }
+
+.detaills__exculsive {
+  padding: 2.5rem 0 1.5rem 0;
+}
+
+.detaills__characteristics {
+  padding-bottom: 40px;
+}
+
+.detaills__map {
+  width: 100%;
+  padding-bottom: 5rem;
+}
+.detaills__map > img {
+  object-fit: contain;
+}
+.left__investing {
+  width: 100%;
+  padding-bottom: 120px;
+}
+.investing__ {
+  max-width: 1120px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.investing__photo {
+  padding-top: 45px;
+}
+
+.investing__photo > img {
+  width: 256px;
+  height: 176px;
+}
