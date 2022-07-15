@@ -810,3 +810,15 @@ h6.text {
   cursor: pointer;
   text-decoration: underline;
 }
+
+.detaills__descriptif {
+  padding: 1.5rem;
+}
+.descrptif {
+  padding-top: 1.5rem;
+}
+.descrptif ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
