@@ -741,6 +741,7 @@ h6.text {
   display: flex;
   flex-direction: column;
   row-gap: 2.5rem;
+  padding-left: 2rem;
 }
 .detaills__right > div {
   border-radius: 4px;
@@ -821,4 +822,15 @@ h6.text {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+}
+
+.detaills__scroll {
+  display: flex;
+}
+.images__scroll {
+  display: flex;
+  column-gap: 1.0625rem;
+}
+
+.detaills__scroll > div:nth-last-child(3) {
 }
