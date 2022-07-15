@@ -792,3 +792,21 @@ h6.text {
   width: 100%;
   text-align: center;
 }
+
+.detaills__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.detaills__profile > img {
+  border-radius: 50%;
+}
+
+.profile__link {
+  padding-top: 1rem;
+  color: var(--blue);
+  cursor: pointer;
+  text-decoration: underline;
+}
