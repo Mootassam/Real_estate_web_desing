@@ -183,6 +183,19 @@ select {
   background-color: var(--white);
 }
 
+textarea {
+  border: 1px solid var(--gray);
+  color: var(--black);
+  padding: 16px 0px 0px 16px;
+  border-radius: 4px;
+  font-size: 1rem;
+  height: 304px;
+  text-align: start;
+}
+textarea:active {
+  border: 1px solid var(--blue);
+  outline: none;
+}
 /* ***** styling the header content ***** */
 .app__header {
 }
@@ -710,4 +723,72 @@ h6.text {
   margin: auto;
   float: right;
   padding-bottom: 7.5rem;
+}
+
+/* Styling The Offres Page Detaills */
+.offres__detaills {
+  width: 100%;
+}
+.detaills {
+  max-width: 1120px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 735px 352px;
+  column-gap: 2rem;
+}
+
+.detaills__right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+.detaills__right > div {
+  border-radius: 4px;
+}
+
+.detaills__form {
+  background-color: var(--background-offres);
+  padding: 1.5rem;
+  height: 949px;
+  max-height: 949px;
+}
+.detaills__profile {
+  background-color: var(--background-offres);
+  padding: 1.5rem;
+  height: 323px;
+}
+.detaills__descriptif {
+  background-color: var(--background-offres);
+  padding: 1.5rem;
+  height: 542px;
+}
+.form {
+  padding: 24px 0 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form__agree {
+  display: flex;
+  align-items: flex-start;
+  justify-content: baseline;
+  align-content: flex-start;
+  column-gap: 11px;
+}
+
+.input__checkbox {
+  width: 24px;
+  height: 24px;
+  background-color: var(--dark--blue);
+}
+
+.detaills__form > .button__secondary {
+  width: 100%;
+  text-align: center;
 }
