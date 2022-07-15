@@ -832,5 +832,32 @@ h6.text {
   column-gap: 1.0625rem;
 }
 
-.detaills__scroll > div:nth-last-child(3) {
+.detaills_localisation {
+  display: flex;
+
+  padding: 2.8475rem 80px 2.75rem;
+}
+.detaills_localisation > div {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  justify-content: center;
+}
+.detaills_localisation > div:nth-child(1) {
+  padding-right: 45px;
+}
+.detaills_localisation > div:nth-child(2) {
+  padding-right: 68px;
+}
+
+.detaills__text {
+  padding: 0 0 2.75rem 80px;
+}
+
+.detaills__price {
+  background-color: var(--background-offres);
+  padding: 21px 24px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
 }
