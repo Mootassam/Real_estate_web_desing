@@ -272,11 +272,11 @@ textarea:active {
 .image__background {
   position: absolute;
   right: 0;
-  z-index: 0;
+  z-index: -1;
 }
 .image__dots {
   position: absolute;
-  z-index: -1;
+  z-index: -3;
   top: 0;
   right: -30px;
 }
@@ -878,7 +878,6 @@ h6.text {
   object-fit: contain;
 }
 .left__investing {
-  width: 100%;
   padding-bottom: 120px;
 }
 .investing__ {
@@ -889,10 +888,32 @@ h6.text {
   flex-direction: column;
 }
 .investing__photo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   padding-top: 45px;
+}
+
+.investing__photo > div {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  text-align: center;
+}
+.investing__photo > div > h6 {
+  color: var(--white);
+  position: absolute;
+  /* position the left edge of the element at the middle of the parent */
 }
 
 .investing__photo > img {
   width: 256px;
   height: 176px;
+}
+
+img {
+  padding: 0;
+  margin: 0;
 }
