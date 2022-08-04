@@ -277,8 +277,9 @@ textarea:active {
 .image__dots {
   position: absolute;
   z-index: -3;
-  top: 0;
-  right: -30px;
+  top: 80px;
+  right: -130px;
+  transform: rotate(90deg);
 }
 
 /* **** styling the offres Version desktop ****** */
